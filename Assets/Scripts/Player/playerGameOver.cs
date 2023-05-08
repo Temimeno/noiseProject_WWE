@@ -9,6 +9,7 @@ public class playerGameOver : MonoBehaviour
 
     public void GameOver()
     {
+        Time.timeScale = 0f;
         GetComponent<NewController>().enabled = false;
         gameOverPanel.SetActive(true);
         weaponParent.SetActive(false);

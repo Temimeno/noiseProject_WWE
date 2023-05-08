@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c43edaa2f06ce4698339568403e1ff, type: 3}
+  m_Name: ReportBoss
+  m_EditorClassIdentifier: 
+  name: ReportBoss
+  animatedPrfab: {fileID: 1429175477109433222, guid: 78cc8b1e248d2eb4ba8756dbf0ab65c3, type: 3}
+  stats:
+    hp: 100
+    damage: 5
+    speed: 2

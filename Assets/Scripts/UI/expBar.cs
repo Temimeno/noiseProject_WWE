@@ -16,7 +16,7 @@ public class expBar : MonoBehaviour
 
     public void SetLevelText(int level)
     {
-        levelText.text = "LEVEL: " + level.ToString();
+        levelText.text = "LEVEL : " + level.ToString();
     }
 
 }

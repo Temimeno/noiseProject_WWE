@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4e143ef43eff24792d6993ce99122c, type: 3}
+  m_Name: Stage1
+  m_EditorClassIdentifier: 
+  stageEvents:
+  - eventType: 0
+    time: 0
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 3a7a1d754222c9c47808fefae54ea6f7, type: 2}
+    count: 3
+  - eventType: 0
+    time: 5
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 3a7a1d754222c9c47808fefae54ea6f7, type: 2}
+    count: 5
+  - eventType: 0
+    time: 10
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 3a7a1d754222c9c47808fefae54ea6f7, type: 2}
+    count: 7
+  - eventType: 0
+    time: 20
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 3a7a1d754222c9c47808fefae54ea6f7, type: 2}
+    count: 10
+  - eventType: 0
+    time: 30
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 3a7a1d754222c9c47808fefae54ea6f7, type: 2}
+    count: 20
+  - eventType: 1
+    time: 60
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: bf5cee54b661ec842a6004d424b19c38, type: 2}
+    count: 1

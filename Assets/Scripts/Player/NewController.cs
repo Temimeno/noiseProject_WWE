@@ -5,7 +5,6 @@ using UnityEngine;
 public class NewController : MonoBehaviour
 {
 
-    public movementJoystick movementJoystick;
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public List<Sprite> nSprites;
@@ -16,6 +15,9 @@ public class NewController : MonoBehaviour
 
     public float walkSpeed;
     public float frameRate;
+    float idleTime;
+
+    public Joystick joystick;
 
     [HideInInspector]
     public Vector2 movement;
@@ -36,7 +38,7 @@ public class NewController : MonoBehaviour
     void Update()
     {
         //get direction of input.
-        movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+        movement = new Vector2(joystick.Horizontal, joystick.Vertical).normalized;
 
         //move based on direction.
         rb.velocity = movement * walkSpeed;
@@ -48,11 +50,15 @@ public class NewController : MonoBehaviour
 
         if(directionSprite != null)
         {
-            spriteRenderer.sprite = directionSprite[0];
+            float playTime = Time.time - idleTime;
+            int totalFrame = (int)(playTime * frameRate);
+            int frame = totalFrame % directionSprite.Count;
+
+            spriteRenderer.sprite = directionSprite[frame];
         } else
 
         {
-            
+            idleTime = Time.time;
         }
 
         if(movement.x != 0)

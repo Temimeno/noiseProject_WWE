@@ -47,9 +47,12 @@ TagManager:
   - name: Floor
     uniqueID: 1859081321
     locked: 0
-  - name: Obstacle
-    uniqueID: 3189791525
+  - name: wall
+    uniqueID: 3355539717
     locked: 0
   - name: Character
     uniqueID: 3950746083
+    locked: 0
+  - name: Obstacle
+    uniqueID: 3189791525
     locked: 0

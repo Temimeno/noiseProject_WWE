@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd271cc5b6d9d3544b5881d1a93be648, type: 3}
+  m_Name: Lancer
+  m_EditorClassIdentifier: 
+  Name: LancerPen
+  stats:
+    damage: 10
+    timeToAttack: 2
+  weaponsBasePrefab: {fileID: 5977869339930278686, guid: 401e0b2bee4407b44998a5fbe4a27c12, type: 3}
+  upgrades:
+  - {fileID: 11400000, guid: acf13e05ed0973e4ea751af0bba82889, type: 2}
+  - {fileID: 11400000, guid: 94cb4185b8f9de14aa6be259d41a99c3, type: 2}
